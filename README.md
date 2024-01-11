@@ -24,47 +24,25 @@ npm install -g didu
 
 **Didu** is designed to be straightforward and intuitive. Here are the basic commands:
 
-### Adding a Task
+## Usage
 
-To add a task, simply type:
-
-bashCopy code
-
-```bash
-didu add this is a test task
 ```
+  Usage:
 
-### Listing and Searching Tasks
+    didu                     Lists all pending tasks
+    didu help                Lists the available commands
+    didu add Buy milk        Create a new task
+    didu ls                  Lists all pending tasks
+    didu ls all              Lists all completed and pending tasks
+    didu ls done             Print all completed tasks
+    didu ls pending          Print all pending tasks 
+    didu rm                  Lists all tasks for removal
+    didu rm all              Lists all tasks for removal
+    didu rm done             Lists all completed tasks for removal
+    didu rm pending          Lists all pending tasks for removal
+    didu clear               Destroy all todo items
 
--   **List Pending Tasks:**
-
-    ```bash
-    didu ls
-    didu ls pending
-    ```
-
--   **List Completed Tasks:**
-
-    ```bash
-    didu ls done
-    ```
-
--   **List All Tasks:**
-
-    ```bash
-    didu ls all
-    ```
-
-
-### Deleting Tasks
-Use the below commands to list the tasks and search, One a task is selected, the task will be deleted.
-
-```bash
-    didu rm
-    didu rm all
-    didu rm pending
-    didu rm done
-```
+  ```
 
 ## Fuzzy Search
 
