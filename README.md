@@ -32,10 +32,10 @@ npm install -g didu
     didu                     Lists all pending tasks
     didu help                Lists the available commands
     didu add Buy milk        Create a new task
-    didu ls                  Lists all pending tasks
-    didu ls all              Lists all completed and pending tasks
-    didu ls done             Print all completed tasks
-    didu ls pending          Print all pending tasks 
+    didu ls                  Lists all pending tasks, Changes the status once selected
+    didu ls all              Lists all tasks, Changes the status once selected
+    didu ls done             Print all completed tasks, Changes the status once selected
+    didu ls pending          Print all pending tasks, Changes the status once selected
     didu rm                  Lists all tasks for removal
     didu rm all              Lists all tasks for removal
     didu rm done             Lists all completed tasks for removal
