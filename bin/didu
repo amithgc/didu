@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+// Importing necessary modules and functions
+const argv = require('argvee')();
+const path = require('path');
+const basename = path.basename;
+const join = path.join;
+const Database = require('../lib/database');
+const Tasks = require('../lib/tasks');
+
+// Setting up the database path, defaulting to a file in the home directory if not set in environment variables
+const dbPath = process.env.DIDU_DB_PATH || join(require('homepath'), '.didu.db.md');
+
+// Initializing the tasks module with the database
+const tasks = new Tasks(new Database(dbPath));
+
+// Processing the command, defaulting to 'ls' if not provided
+const command = basename(argv.commands.shift() || 'ls');
+
+// Handling uncaught exceptions
+process.on('uncaughtException', (err) => {
+  const debugMode = argv.modes.includes('debug');
+  const out = debugMode && err.stack ? err.stack : `task: ${err.message}`;
+  console.error(out);
+  process.exit(1);
+});
+
+// Executing the command module, handling module not found errors
+try {
+  require(`../lib/cli/${command}`)(argv, tasks);
+} catch (e) {
+  if (e.code !== 'MODULE_NOT_FOUND') throw e;
+  throw new Error(`Unrecognized command "${command}"`);
+}
