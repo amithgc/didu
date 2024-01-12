@@ -2,6 +2,7 @@
 <h1 align="center">
 	<img width="100%" src="media/didu_logo.png" alt="DIDU">
 </h1>
+
 Welcome to **Didu**, a sleek, user-friendly, and powerful command-line interface (CLI) application for managing your daily tasks with ease. Designed for simplicity and efficiency, Didu allows you to add, manage, and search tasks in a flash, using intuitive commands and fuzzy search capabilities.
 
 <h1 align="center">
@@ -61,6 +62,7 @@ npm install -g didu
 
 Enhance your task searching experience with the integrated fuzzy search feature. Simply type your command, and **Didu** will present a list of tasks. You can then type to filter and find the exact task you're looking for.
 
+
 ## Contribute
 
 Contributions are always welcome! Feel free to fork the repository and submit your contributions via pull requests.
@@ -69,4 +71,4 @@ Contributions are always welcome! Feel free to fork the repository and submit yo
 
 Didu is released under the MIT License.
 
-Happy Task Managing with **Didu**!
+Happy Task Managing with **Didu**!, Here is the [blog post](https://blog.amithgc.com/post/didu-simple-task-management-cli-application/) explaining everything!!
