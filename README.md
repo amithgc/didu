@@ -1,4 +1,4 @@
-# Didu (Did U?) - Your Simple Yet Powerful Todo CLI
+# Didu (Did U?) - Your Simple Yet Powerful Todo CLI [![npm version](https://badge.fury.io/js/didu.svg)](https://badge.fury.io/js/didu)
 <h1 align="center">
 	<img width="100%" src="media/didu_logo.png" alt="DIDU">
 </h1>
