@@ -2,6 +2,8 @@
 
 Welcome to **Didu**, a sleek, user-friendly, and powerful command-line interface (CLI) application for managing your daily tasks with ease. Designed for simplicity and efficiency, Didu allows you to add, manage, and search tasks in a flash, using intuitive commands and fuzzy search capabilities.
 
+<img src="https://github.com/amithgc/didu/blob/master/media/demo-video.webp?raw=true" width="800">&nbsp;&nbsp;&nbsp;&nbsp;
+
 ## Features
 
 - **Add Tasks Quickly:** Effortlessly add new tasks to your list.
