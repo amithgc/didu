@@ -1,8 +1,12 @@
 # Didu (Did U?) - Your Simple Yet Powerful Todo CLI
-
+<h1 align="center">
+	<img width="100%" src="media/didu_logo.png" alt="DIDU">
+</h1>
 Welcome to **Didu**, a sleek, user-friendly, and powerful command-line interface (CLI) application for managing your daily tasks with ease. Designed for simplicity and efficiency, Didu allows you to add, manage, and search tasks in a flash, using intuitive commands and fuzzy search capabilities.
 
-<img src="https://raw.githubusercontent.com/amithgc/didu/main/media/demo-video.webp?raw=true" width="800">
+<h1 align="center">
+<img width="100%" src="https://raw.githubusercontent.com/amithgc/didu/main/media/demo-video.webp?raw=true">
+</h1>
 
 ## Features
 
