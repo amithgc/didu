@@ -29,18 +29,25 @@ npm install -g didu
 ```
   Usage:
 
+    didu add <task>          Creates a new task
     didu                     Lists all pending tasks
-    didu help                Lists the available commands
-    didu add Buy milk        Create a new task
     didu ls                  Lists all pending tasks, Changes the status once selected
     didu ls all              Lists all tasks, Changes the status once selected
-    didu ls done             Print all completed tasks, Changes the status once selected
-    didu ls pending          Print all pending tasks, Changes the status once selected
+    didu ls done             Lists all completed tasks, Changes the status once selected
+    didu ls pending          Lists all pending tasks, Changes the status once selected
+    didu pretty              Displays all tasks
+    didu pretty all          Displays all tasks
+    didu pretty done         Displays all done tasks
+    didu pretty pending      Displays all pending tasks
     didu rm                  Lists all tasks for removal
     didu rm all              Lists all tasks for removal
     didu rm done             Lists all completed tasks for removal
     didu rm pending          Lists all pending tasks for removal
-    didu clear               Destroy all todo items
+    didu clear               Deletes all done tasks
+    didu clear all           Deletes all tasks
+    didu clear done          Deletes all done tasks
+    didu clear pending       Deletes all pending tasks
+    didu help                Displays this help information
 
   ```
 
