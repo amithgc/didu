@@ -9,7 +9,7 @@ const Database = require('../lib/database');
 const Tasks = require('../lib/tasks');
 
 // Setting up the database path, defaulting to a file in the home directory if not set in environment variables
-const dbPath = process.env.DIDU_DB_PATH || join(require('homepath'), '.didu.db.md');
+const dbPath = process.env.DIDU_DB_PATH || join(require('homepath'), '.didu.db.json');
 
 // Initializing the tasks module with the database
 const tasks = new Tasks(new Database(dbPath));
