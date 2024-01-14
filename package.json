@@ -1,6 +1,6 @@
 {
   "name": "didu",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple Todo List, with FZF search",
   "preferGlobal": true,
   "keywords": [
