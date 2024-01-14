@@ -15,20 +15,25 @@ const dbPath = process.env.DIDU_DB_PATH || join(require('homepath'), '.didu.db.j
 const tasks = new Tasks(new Database(dbPath));
 
 // Processing the command, defaulting to 'ls' if not provided
-const command = basename(argv.commands.shift() || 'ls');
+let command = basename(argv.commands.shift() || 'ls');
+
+// Alias for pretty
+if (command === 'pretty') {
+    command = "v"
+}
 
 // Handling uncaught exceptions
 process.on('uncaughtException', (err) => {
-  const debugMode = argv.modes.includes('debug');
-  const out = debugMode && err.stack ? err.stack : `task: ${err.message}`;
-  console.error(out);
-  process.exit(1);
+    const debugMode = argv.modes.includes('debug');
+    const out = debugMode && err.stack ? err.stack : `task: ${err.message}`;
+    console.error(out);
+    process.exit(1);
 });
 
 // Executing the command module, handling module not found errors
 try {
-  require(`../lib/cli/${command}`)(argv, tasks);
+    require(`../lib/cli/${command}`)(argv, tasks);
 } catch (e) {
-  if (e.code !== 'MODULE_NOT_FOUND') throw e;
-  throw new Error(`Unrecognized command "${command}"`);
+    if (e.code !== 'MODULE_NOT_FOUND') throw e;
+    throw new Error(`Unrecognized command "${command}"`);
 }
